@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
 public class WelcomeController {
 
-    @GetMapping("/welcome/{name}")
+    @GetMapping("/api/{name}")
     public String Hello(@PathVariable String name){
 
         return "hello: "+name+" welcome.";
